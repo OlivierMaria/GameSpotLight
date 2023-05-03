@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GameSpotlight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2991/2991606.png" type="image/x-icon">
+</head>
+
+<body style="background-color: #191919;">
+    <div class="container py-4 px-3 mx-auto">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="mb-0" id="gamespotlight" style="color: #d20a32; position: relative;">
+
+                🕹️ GameSpot<span id="light" style="color: #fff; position: absolute; left: 100%;">Light</span>
+            </h1>
+
+
+
+            <form class="form-inline my-4">
+                <div class="input-group">
+                    <input class="form-control form-control-sm rounded-20 border-white bg-transparent" type="search"
+                        placeholder="Find a game.." aria-label="Search">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-transparent border-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 1A5.5 5.5 0 0 1 12 6.5c0 1.16-.36 2.236-.98 3.12l3.524 3.524a.5.5 0 0 1-.708.708l-3.524-3.524A5.5 5.5 0 1 1 6.5 1zm0 1a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <h1 class="text-light" my-2>Welcome,</h1>
+        <p class="text-light">Video games are interactive forms of entertainment that have grown in popularity over the
+            years. They are available on different platforms such as game consoles, computers and smartphones. Video
+            games are designed to provide an immersive experience for their players, often using sophisticated graphics
+            and animations. Video games also offer a wide variety of genres, ranging from sports and racing games to
+            role-playing and strategy games. Whether you are a beginner or an experienced gamer, there is a video game
+            for you. Follow GameSpotlight to learn about the latest titles, trends and news from the world of video
+            games.</p>
+        <!--Maquette-->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle btn-primary text-light" type="button"
+                id="platformsDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: #d20a32; border-color: #d20a32;">
+                Platform : All
+            </button>
+            <ul class=" dropdown-menu" aria-labelledby="platformsDropdown">
+                <li><a class="dropdown-item" href="#" data-platform="">All</a></li>
+                <li><a class="dropdown-item" href="#" data-platform="4">PC</a></li>
+                <li><a class="dropdown-item" href="#" data-platform="18">PlayStation 4</a></li>
+                <li><a class="dropdown-item" href="#" data-platform="1">Xbox One</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="cards-container">
+        </div>
+
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <button class="btn btn-primary view-more-btn mx-auto" type="button" id="platformsDropdown" aria-haspopup="true"
+            aria-expanded="false" style="background-color: #d20a32; border-color: #d20a32;">
+            Show More
+        </button>
+    </div>
+    </div>
+
+
+
+    <footer class="my-footer">
+        <p>Maria Olivier @ 2023 - Fictionnal website for exercice</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>

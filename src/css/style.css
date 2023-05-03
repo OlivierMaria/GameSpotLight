@@ -1,0 +1,93 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  position: relative;
+  background-color: transparent;
+  width: 18rem;
+}
+
+.card:hover .card-img-top {
+  filter: blur(3px);
+}
+
+.card:hover::before {
+  content: attr(data-release-date);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  z-index: 1;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 10rem;
+}
+
+.card-title {
+  color: white;
+}
+    
+    #light {
+      animation: spotlight 3s ease-in-out infinite;
+    }
+    
+    @keyframes spotlight {
+      0% {
+        opacity: 1;
+        color: #fff;
+        left: 100%;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        color: #000;
+        left: 100%;
+        content: "Dark";
+      }
+    }
+    
+    .my-footer {
+      color: white;
+  }
+
+  .form-inline .form-control {
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+
+  /* Logo */
+
+  xbox{
+    background-image: url(../img/xbox-line.png);
+  }
+
+  
+  #game-cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .game-details-container {
+    color: white;
+  }
